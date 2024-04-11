@@ -1,0 +1,100 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f9;
+    padding:50px 0;
+    margin-bottom: 50px;
+}
+
+.header img {
+    width: 300px;
+}
+
+.header .navbar {
+    margin-top:50px;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.header .navbar a:hover {
+    background-color: #e7e9ec;
+    outline: 1px solid;
+}
+
+.datenblatt {
+    padding:20px;
+    border:2px solid;
+}
+
+.packliste {
+    padding:20px;
+    border:2px solid;
+}
+
+.optional {
+    margin-top: 20px;
+}
+
+.werbung {
+    margin-top: 20px;
+}
+
+.notwendig {
+    margin-top:20px;
+}
+
+.anzahl {
+    margin-top:20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f9;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 0.8em;
+}
+
+.footer a:hover {
+    background-color: #e7e9ec;
+    outline: 1px solid;
+}
+
+.content {
+    display:flex;
+    width: 700px;
+    justify-content: center;
+    margin:0 auto;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+}

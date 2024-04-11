@@ -1,0 +1,239 @@
+/* Setzt den äußeren Bereich des Dokuments zurück */
+body {
+    margin: 0;
+    /* Kein äußerer Seitenrand */
+    padding: 0;
+    /* Kein innerer Seitenrand */
+    background-image: url('bild4.png');
+    /* Hintergrundbild */
+    background-size: cover;
+    /* Bildgröße anpassen */
+    background-repeat: no-repeat;
+    /* Wiederholung des Hintergrundbilds deaktivieren */
+    background-position: center;
+    /* Hintergrundbild zentriert ausrichten */
+    color: #cc1b1b;
+    /* Textfarbe */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    /* Textschatten */
+    -webkit-text-stroke: 1px #3d0101;
+    /* Textumriss für Webkit-Browser */
+    text-align: center;
+    /* Text zentriert ausrichten */
+    font-family: "Algerian", sans-serif;
+    /* Schriftart */
+    overflow-y: scroll;
+    /* Vertikaler Bildlauf aktivieren, wenn der Inhalt zu groß ist */
+}
+
+/* Stil für Überschriften */
+h1 {
+    font-size: 36px;
+    /* Schriftgröße für Überschriften */
+}
+
+/* Stil für Textabschnitte */
+p {
+    font-size: 18px;
+    /* Schriftgröße für Abschnitte */
+    line-height: 1.5;
+    /* Zeilenhöhe */
+}
+
+/* Stil für Links im Text */
+a {
+    text-decoration: none;
+    /* Unterstreichung von Links entfernen */
+    color: #cc1b1b;
+    /* Linkfarbe */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Unterstreichung hinzufügen, wenn der Link gehovered wird */
+}
+
+/* Stil für Buttons */
+button.cta-button {
+    background-color: #cc1b1b;
+    /* Hintergrundfarbe */
+    color: #fff;
+    /* Textfarbe */
+    padding: 10px 20px;
+    /* Innenabstand */
+    border: none;
+    /* Kein Rahmen */
+    border-radius: 5px;
+    /* Abrundung der Ecken */
+    font-size: 18px;
+    /* Schriftgröße */
+    cursor: pointer;
+    /* Zeigerform beim Hover */
+}
+
+/* Stil für Formularelemente */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: transparent;
+    /* Transparenter Hintergrund */
+    border: 2px dashed #cc1b1b;
+    /* Gestrichelter Rahmen */
+    border-radius: 10px;
+    /* Abrundung der Ecken */
+    padding: 10px;
+    /* Innenabstand */
+    width: 40%;
+    /* Breite des Elements */
+    font-family: "Baguet Script", sans-serif;
+    /* Schriftart */
+    font-size: 20px;
+    /* Schriftgröße */
+    color: #cc1b1b;
+    /* Textfarbe */
+}
+
+/* Stil für den Registrierungsbutton */
+input[type="submit"] {
+    background-color: transparent;
+    /* Transparenter Hintergrund */
+    border: 2px dashed #cc1b1b;
+    /* Gestrichelter Rahmen */
+    border-radius: 10px;
+    /* Abrundung der Ecken */
+    padding: 10px 20px;
+    /* Innenabstand */
+    font-family: "Algerian", sans-serif;
+    /* Schriftart */
+    font-size: 32px;
+    /* Schriftgröße */
+    color: #cc1b1b;
+    /* Textfarbe */
+    cursor: pointer;
+    /* Zeigerform beim Hover */
+    text-transform: none;
+    /* Keine Texttransformation */
+}
+
+/* Styles für das Menü und den Toggle-Button */
+#header {
+    background-color: #ff5858;
+    /* Hintergrundfarbe des Headers */
+    border: 2px dashed #cc1b1b;
+    /* Gestrichelter Rahmen */
+    border-radius: 10px;
+    /* Abrundung der Ecken */
+    padding: 10px 20px;
+    /* Innenabstand des Headers */
+
+    display: flex;
+    /* Flexbox-Anordnung */
+    justify-content: space-between;
+    /* Platz zwischen den Elementen verteilen */
+    align-items: center;
+    /* Vertikale Ausrichtung zentrieren */
+    padding: 10px 20px;
+    /* Innenabstand des Headers (erneut angegeben) */
+    z-index: 1000;
+    /* Schichtebene, um sicherzustellen, dass der Header vor anderen Inhalten angezeigt wird */
+}
+
+/* Stil für das Off-Canvas-Menü (versteckt) */
+.off-canvas-menu {
+    position: fixed;
+    /* Feste Positionierung */
+    top: 20;
+    /* Abstand vom oberen Rand (Korrigiert: top: 20px;) */
+    left: -250px;
+    /* Menü ist außerhalb des sichtbaren Bereichs */
+    height: 100%;
+    /* Höhe des Menüs */
+    width: 250px;
+    /* Breite des Menüs */
+    background-color: #ff5858;
+    /* Hintergrundfarbe des Menüs */
+    z-index: 1000;
+    /* Schichtebene */
+    transition: left 1s ease;
+    /* Animation beim Einblenden */
+}
+
+/* Stil für die breite, transparente Box */
+.wide-transparent-box {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Füllt die gesamte Breite des Elternelements (Off-Canvas-Menü) */
+    height: 100%;
+    /* Gleiche Höhe wie das Menü */
+    background: blue;
+    /* Transparenter Hintergrund */
+}
+
+
+
+/* Stil für den Menü-Button (im Header) */
+#menu-icon {
+    cursor: pointer;
+    /* Zeigerform beim Hover */
+    width: 30px;
+    /* Breite des Menü-Buttons */
+    height: 30px;
+    /* Höhe des Menü-Buttons */
+}
+
+/* Stil für das Menü und die Menüpunkte */
+#menuItems {
+    list-style-type: none;
+    /* Keine Aufzählungspunkte */
+    padding: 0;
+    /* Kein Abstand */
+}
+
+#menuItems li {
+    display: block;
+    /* Menüpunkte untereinander anzeigen */
+    margin-bottom: 10px;
+    /* Abstand zwischen den Menüpunkten */
+}
+
+#menu a {
+    text-decoration: none;
+    /* Unterstreichung von Links entfernen */
+    color: #fff;
+    /* Linkfarbe */
+    font-size: 18px;
+    /* Schriftgröße */
+}
+
+/* Stil für das Menü, wenn es sichtbar ist (nach Einblenden) */
+#off-canvas-menu.active {
+    left: 0;
+    /* Menü wird von links nach rechts eingeblendet */
+}
+
+/* Stil für den Zurück-nach-oben-Button */
+#back-to-top {
+    position: fixed;
+    /* Feste Positionierung */
+    bottom: 20px;
+    /* Abstand vom unteren Rand */
+    right: 20px;
+    /* Abstand vom rechten Rand */
+    background-color: #cc1b1b;
+    /* Hintergrundfarbe */
+    color: #000000;
+    /* Textfarbe */
+    padding: 10px 20px;
+    /* Innenabstand */
+    border: none;
+    /* Kein Rahmen */
+    border-radius: 5px;
+    /* Abrundung der Ecken */
+    font-size: 18px;
+    /* Schriftgröße */
+    cursor: pointer;
+    /* Zeigerform beim Hover */
+}
